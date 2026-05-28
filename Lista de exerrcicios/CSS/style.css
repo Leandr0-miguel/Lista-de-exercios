@@ -1,0 +1,26 @@
+main{
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    margin: auto;
+
+    max-width: 1200px;
+}
+
+section{
+    margin-top: 20px;
+    background-color: rgb(220, 221, 223);
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.triangulo-resultado{
+    margin-top: 20px;
+}
+
+.triangulo-resultado button{
+    padding: 5px;
+    border: none;
+}

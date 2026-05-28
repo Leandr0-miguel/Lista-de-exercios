@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Lista de exercicios</title>
 </head>
 <body>
     <h1>Lista de exercicios</h1>
     
-    <section>
-        <h2>1- Encontre o Triangulo</h2>
+    <main>
+        <section>
+            <h2>1- Encontre o Triangulo</h2>
         
-        <label for="inputX">Informe o valor de X:</label>
-        <input type="number" id="inputX" name="inputX" placeholder="X">
+            <label for="inputX">Informe o valor de X:</label>
+            <input type="number" id="inputX" name="inputX" placeholder="X">
         
-        <label for="inputY">Informe o valor de Y:</label>
-        <input type="number" id="inputY" name="inputY" placeholder="Y">
+            <label for="inputY">Informe o valor de Y:</label>
+            <input type="number" id="inputY" name="inputY" placeholder="Y">
         
-        <label for="inputZ">Informe o valor de Z:</label>
-        <input type="number" id="inputZ" name="inputZ" placeholder="Z">
+            <label for="inputZ">Informe o valor de Z:</label>
+            <input type="number" id="inputZ" name="inputZ" placeholder="Z">
         
-        <button id="btnTriangulo">Verificar Triangulo</button>
-
-        <input type="text" id="resultadoTriangulo" placeholder="Resultado" readonly>
-
-    </section>
+            <div class="triangulo-resultado">
+                <button id="btnTriangulo">Verificar Triangulo</button>
+                <input type="text" id="resultadoTriangulo" placeholder="Resultado" readonly>
+            </div>
+        </section>
+        <section>
+            <h2>2- Calculadora IMC</h2>
+        </section>
+    </main>
 
 </body>
 <script src="JS/script.js"></script>
