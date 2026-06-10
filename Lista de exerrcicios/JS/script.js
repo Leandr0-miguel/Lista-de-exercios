@@ -1,4 +1,4 @@
-// Variaveis exercicio 1
+// Exercicio 1
 let inputX = document.getElementById("inputX");
 let inputY = document.getElementById("inputY");
 let inputZ = document.getElementById("inputZ");
@@ -7,10 +7,6 @@ let btnTriangulo = document.getElementById("btnTriangulo");
 
 let resultadoTriangulo = document.getElementById("resultadoTriangulo");
 
-
-
-
-// Exercicio 1
 function verificarTriangulo(){
     let x = Number(inputX.value);
     let y = Number(inputY.value);
@@ -54,7 +50,7 @@ function definirTriangulo(lados){
 btnTriangulo.addEventListener("click", verificarTriangulo);
 
 
-//Variaveis exercicio 2
+//Exercicio 2
 let inputPeso = document.getElementById("inputPeso");
 let inputAltura = document.getElementById("inputAltura");
 
@@ -63,30 +59,39 @@ let btnIMC = document.getElementById("btnIMC")
 let resultadoIMC = document.getElementById("resultadoIMC");
 let statusIMC = document.getElementById("statusIMC");
 
-
-//Exercicio 2
 function calcIMC(){
     let altura = Number(inputAltura.value)
     let peso = Number(inputPeso.value)
-    let IMC = peso / (altura * altura)
-
+    let IMC = 0;
     
-    if(IMC < 18.5){
-        statusIMC.textContent = "Abaixo do peso";
-    } else if(IMC  > 18.5 && IMC <= 24.9){
-        statusIMC.textContent = "Peso normal";
-    } else if(IMC >= 25 && IMC <= 29.9){
-        statusIMC.textContent = "Sobrepeso";
-    } else if(IMC >= 30 && IMC <= 34.9){
-        statusIMC.textContent = "Obesidade grau 1";
-    } else if(IMC >= 35 && IMC <= 39.9){
-        statusIMC.textContent = "Obesidade grau 2";
+    if(peso && altura){
+        IMC = peso / (altura * altura);
+
+        if(IMC < 18.5){
+            statusIMC.textContent = "Abaixo do peso";
+        } else if(IMC  > 18.5 && IMC <= 24.9){
+            statusIMC.textContent = "Peso normal";
+        } else if(IMC >= 25 && IMC <= 29.9){
+            statusIMC.textContent = "Sobrepeso";
+        } else if(IMC >= 30 && IMC <= 34.9){
+            statusIMC.textContent = "Obesidade grau 1";
+        } else if(IMC >= 35 && IMC <= 39.9){
+            statusIMC.textContent = "Obesidade grau 2";
+        } else{
+        }
     } else{
-        statusIMC.textContent = "Obesidade grau 3";
+        IMC = "00.00"
+        statusIMC.textContent = "Informe seu peso e sua altura!";
     }
 
 
-    resultadoIMC.textContent = `Seu IMC: ${IMC.toFixed(2)}`
+    resultadoIMC.textContent = `Seu IMC: ${IMC.toFixed(2)}`;
 }
 
-btnIMC.addEventListener("click", calcIMC)
+btnIMC.addEventListener("click", calcIMC);
+
+//Exercicio 3
+let inputAnoFabricacao = document.getElementById("inputAnoFabricacao");
+let inputAnoTabela = document.getElementById("inputTabela");
+
+let btnImpostoVeiculo = document.getElementById("inputImpostoVeiculo");

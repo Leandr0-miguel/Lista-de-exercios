@@ -16,15 +16,10 @@ section{
     justify-content: center;
 }
 
-.triangulo-resultado{
+.resultado{
     margin-top: 20px;
 }
 
-.triangulo-resultado input {
+.resultado input {
     width: 500px;
-}
-
-.triangulo-resultado button{
-    padding: 5px;
-    border: none;
 }
