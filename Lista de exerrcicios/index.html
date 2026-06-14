@@ -55,13 +55,82 @@
             <button id="btnImpostoVeiculo">Verificar imposto</button>
 
             <div class="resultado">
-                <label for="resultadoImpostoVeiculo">Valor do imposto:</label>
+                <label for="resultadoImpostoVeiculo">Valor do imposto: R$</label>
                 <input type="text" id="resultadoImpostoVeiculo" readonly>
             </div>
 
         </section>
-    </main>
 
+        <section>
+            <h2>4- Calculadora de Salario</h2>
+
+            <label>Informe o código do cargo:</label>
+            <input type="number" id="inputCodigoCargo">
+            
+            <label>Informe o seu salario atual:</label>
+            <input type="number" id="inputSalarioAtual">
+
+            <button id="btnCalcularSalario">calcular novo salário</button>
+            <div class="resultado">
+               <h3 id="resSalarioAntigo">Salario Antigo: </h3>
+               <h3 id="resNovoSalario">Novo Salario: </h3>
+               <h3 id="diferencaSalario">Diferença: </h3>
+            </div>  
+
+        </section>
+
+        <section>
+            <h2>5- Calculadora de Crédito</h2>
+
+            <label>Informe seu saldo médio:</label>
+            <input type="number" placeholder="Seu saldo médio" id="inputSaldoMedio">
+
+            <button id="btnCalcCredito">Calcular crédito</button>
+
+            <h3 id="resultadoCredito">Crédito calculado: </h3>
+        </section>
+
+        <section>
+            <h2>6- Calculadora de Cárdapio</h2>
+
+            <table>
+                <tr>
+                    <th>Código</th>
+                    <th>Produto</th>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Bauru</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Misto Quente</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Hamburger</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Cheeseburger</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Reftigerante</td>
+                </tr>
+            </table>
+
+            <label>Informe o código do produto: </label>    
+            <input type="number" id="inputCodigoProduto">
+
+            <label>Informe a quantidade desejada: </label>
+            <input type="number" id="inputQuantidadeProduto">
+
+            <button id="btnCalcValorTotal">Calacular valor</button>
+
+            <h3 id="valorTotal">Valor Total: R$00.00</h3>
+        </section>
+    </main>
 </body>
 <script src="JS/script.js"></script>
 </html>

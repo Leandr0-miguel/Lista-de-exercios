@@ -1,25 +1,100 @@
-main{
-    justify-content: center;
-    align-items: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f4f4f4;
     padding: 20px;
+}
 
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+main{
+    max-width: 1000px;
     margin: auto;
-
-    max-width: 1200px;
 }
 
 section{
-    margin-top: 20px;
-    background-color: rgb(220, 221, 223);
+    background-color: white;
+    border-radius: 10px;
     padding: 20px;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 20px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2{
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    margin-top: 15px;
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #3498db;
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #2980b9;
 }
 
 .resultado{
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
-.resultado input {
-    width: 500px;
+.resultado input{
+    width: 100%;
+}
+
+h3{
+    margin-top: 10px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+table, th, td{
+    border: 1px solid #ccc;
+}
+
+th{
+    background-color: #3498db;
+    color: white;
+}
+
+th, td{
+    padding: 10px;
+    text-align: center;
 }
